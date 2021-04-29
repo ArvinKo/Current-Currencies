@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Currencies</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.1.1/dist/chart.min.js"></script>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 id="title">Comparison of Currencies Against The Euro</h1>
+
+    <div class="input">
+      <input type="text" id="currCheck" placeholder="Enter Currency Code" />
+      <input type="button" id="submit" value="Submit" />
+    </div>
+
+    <div class="chartContainer">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="display">
+      <p id="const">1 Euro equals to</p>
+      <p id="conversion"></p>
+    </div>
+
+    <p id="error"></p>
+
+    <input type="button" id="back" value="Enter New Code" />
+
+    <script src="home.js" async></script>
+  </body>
+</html>
